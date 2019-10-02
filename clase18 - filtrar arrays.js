@@ -34,3 +34,13 @@ var sacha = {
     altura: 1.76
   }
   
+  const esAlta = ({ altura }) => altura > 1.8
+
+var personas = [sacha, alan, martin, dario, vicky, paula]
+
+var personasAltas = personas.filter(esAlta)
+// var personasAltas = personas.filter(function (persona) {
+//   return persona.altura > 1.8
+// })
+
+console.log(personasAltas)
