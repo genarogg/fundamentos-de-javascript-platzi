@@ -39,3 +39,32 @@ var sacha = {
     altura: 1.76,
     cantidadDeLibros: 182
   }
+
+  const esAlta = ({ altura }) => altura > 1.8
+
+var personas = [sacha, alan, martin, dario, vicky, paula]
+
+var personasAltas = personas.filter(esAlta)
+// var personasAltas = personas.filter(function (persona) {
+//   return persona.altura > 1.8
+// })
+
+// persona.altura = persona.altura * 100
+const pasarAlturaACms = persona => ({
+  ...persona,
+  altura: persona.altura * 100
+})
+
+var personasCms = personas.map(pasarAlturaACms)
+
+// var acum = 0
+//
+// for (var i = 0; i < personas.length; i++) {
+//   acum = acum + personas[i].cantidadDeLibros
+// }
+
+const reducer = (acum, { cantidadDeLibros }) => acum + cantidadDeLibros
+
+var totalDeLibros = personas.reduce(reducer, 0)
+
+console.log(`En total todos tienen ${totalDeLibros} libros`)
