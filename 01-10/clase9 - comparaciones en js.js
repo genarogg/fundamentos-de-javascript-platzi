@@ -1,9 +1,9 @@
-var x = 4, y = '4'
+const x = 4, y = '4'
 
-var sacha = {
+const sacha = {
   nombre: 'Sacha'
 }
 
-var otraPersona = {
+const otraPersona = {
   nombre: 'Sacha'
 }
