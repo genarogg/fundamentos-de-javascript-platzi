@@ -1,10 +1,10 @@
-var sacha = {
+const sacha = {
   nombre: "Sacha",
   apellido: "Lifszyc",
   edad: 28
 };
 
-var dario = {
+const dario = {
   nombre: "Darío",
   apellido: "Susnisky",
   edad: 27
