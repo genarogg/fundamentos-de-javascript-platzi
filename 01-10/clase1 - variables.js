@@ -1,9 +1,9 @@
-var nombre = 'Sacha', apellido = 'Lifszyc'
-var edad = 28
+const nombre = "Sacha";
+const apellido = "Lifszyc";
+const edad = 28;
+const peso = 75;
 
-edad = '28 años'
+edad = "28 años";
 
-console.log('Hola ' + nombre + ' ' + apellido)
-console.log('Tengo ' + edad)
-
-var peso = 75
+console.log("Hola " + nombre + " " + apellido);
+console.log("Tengo " + edad);
