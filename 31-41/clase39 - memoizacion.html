@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="es">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Clase 39 - Memoización</title>
   </head>
   <body>
@@ -13,21 +13,21 @@
 
       function factorial(n) {
         if (!this.cache) {
-          this.cache = {}
+          this.cache = {};
         }
 
-        debugger
+        debugger;
         if (this.cache[n]) {
-          return this.cache[n]
+          return this.cache[n];
         }
 
         if (n === 1) {
-          return 1
+          return 1;
         }
 
-        this.cache[n] = n * factorial(n - 1)
-        debugger
-        return this.cache[n]
+        this.cache[n] = n * factorial(n - 1);
+        debugger;
+        return this.cache[n];
       }
     </script>
   </body>
