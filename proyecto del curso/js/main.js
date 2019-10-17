@@ -51,7 +51,19 @@ class Juego {
         this.agregarEventosClick();
     }
 
-    
+    transformarNumeroAColor(numero){
+        switch(numero){
+        case 0:
+            return 'celeste'
+        case 1:
+            return 'violeta'
+        case 2:
+            return 'naranja'
+        case 3:
+            return 'verde'
+
+        }
+    }
 
     
 
