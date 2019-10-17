@@ -87,7 +87,14 @@ class Juego {
         }
     }
 
-    
+    iluminarColor(color){
+        this.colores[color].classList.add('light');
+        setTimeout(() => this.apagarColor(color), 350);
+    }
+
+    apagarColor(color){
+        this.colores[color].classList.remove('light');
+    }
     
     
 
