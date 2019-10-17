@@ -138,5 +138,12 @@ class Juego {
             .then(this.inicializar)
     }
 
-    
+    perdioElJuego(){
+        swal("Genarogg", "Lo lamento, perdisteis el juego :(", "error")
+            .then(() => {
+                this.eliminarEventosClick
+                this.inicializar
+
+            } )
+    }
 }
