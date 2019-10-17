@@ -115,7 +115,17 @@ class Juego {
         const numeroColor = this.transformarColorANumero(nombreColor);
         this.iluminarColor(nombreColor)
 
-        
+        if(numeroColor === this.secuencia[this.subnivel]){
+            this.subnivel++;
+            if(this.subnivel === this.nivel){
+                this.nivel++;
+                this.eliminarEventosClick();
+                
+            }
+        }
+        else{
+            this.perdioElJuego();
+        }
     }
 
     
