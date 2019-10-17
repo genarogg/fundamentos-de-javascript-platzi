@@ -110,7 +110,13 @@ class Juego {
         this.colores.naranja.removeEventListener('click', this.elegirColor);
     }
 
-    
+    elegirColor(ev){
+        const nombreColor = ev.target.dataset.color;
+        const numeroColor = this.transformarColorANumero(nombreColor);
+        this.iluminarColor(nombreColor)
+
+        
+    }
 
     
 
