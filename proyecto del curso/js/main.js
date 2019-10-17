@@ -65,7 +65,19 @@ class Juego {
         }
     }
 
-    
+    transformarColorANumero(numero){
+        switch(numero){
+        case 'celeste':
+            return 0
+        case 'violeta':
+            return 1
+        case 'naranja':
+            return 2
+        case 'verde':
+            return 3
+
+        }
+    }
 
     
 
