@@ -147,3 +147,7 @@ class Juego {
             } )
     }
 }
+
+function empezarJuego() {
+    var juego = new Juego()
+}
