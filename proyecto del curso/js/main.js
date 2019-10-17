@@ -16,7 +16,20 @@ class Juego {
         setTimeout(this.siguienteNivel, 500)
     }
 
-    
+    inicializar() {
+
+        this.siguienteNivel =this.siguienteNivel.bind(this);
+        this.elegirColor = this.elegirColor.bind(this);
+        /* btnEmpezar.classList.add('hide'); */
+        this.toggleBtnEmpezar();
+        this.nivel = 1;
+        this.colores = {
+            celeste,
+            violeta,
+            naranja,
+            verde
+        }
+    }
 
     
 
