@@ -96,7 +96,12 @@ class Juego {
         this.colores[color].classList.remove('light');
     }
     
-    
+    agregarEventosClick(){
+        this.colores.celeste.addEventListener('click', this.elegirColor);
+        this.colores.verde.addEventListener('click', this.elegirColor);
+        this.colores.violeta.addEventListener('click', this.elegirColor);
+        this.colores.naranja.addEventListener('click', this.elegirColor);
+    }
 
     
 
