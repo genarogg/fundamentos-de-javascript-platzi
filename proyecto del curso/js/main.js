@@ -120,7 +120,12 @@ class Juego {
             if(this.subnivel === this.nivel){
                 this.nivel++;
                 this.eliminarEventosClick();
-                
+                if(this.nivel === (ULTIMO_NIVEL + 1)){
+                    this.ganoElJuego();
+                }
+                else{
+                    setTimeout( this.siguienteNivel, 1500)
+                }
             }
         }
         else{
