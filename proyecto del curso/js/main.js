@@ -44,7 +44,12 @@ class Juego {
         this.secuencia = new Array(ULTIMO_NIVEL).fill(0).map(n => Math.floor(Math.random() * 4));
     }
 
-    
+    siguienteNivel(){
+        this.subnivel = 0;
+        this.nombreAtributo = "valor"
+        this.iluminarSecuencia();
+        this.agregarEventosClick();
+    }
 
     
 
