@@ -133,7 +133,10 @@ class Juego {
         }
     }
 
-    
+    ganoElJuego(){
+        swal("Genarogg", "Felicitaciones, ganaste el juego!", "success")
+            .then(this.inicializar)
+    }
 
     
 }
